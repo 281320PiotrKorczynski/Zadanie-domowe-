@@ -1,20 +1,18 @@
 #include <iostream>
+#include "naglowkowy.h"
 using namespace std;
 int main() {
-    char lul;
-    int x,y,result;
-    do {
-        cout << "Podaj dwie liczby calkowite x i y (lub 'e' aby wyjsc):";
-        cin >> lul;
+    CounterController controller;
 
-        if(lul == 'e') {
-            cout << "Koniec programu." << endl;
-            return 0;
+    char input;
+    while (true) {
+        controller.handleClick();
+        cout << "Nacisnij e (zeby wyjsc), albo dowolny znak i enter zeby zdobyc punkt: ";
+        cin >> input;
+        if (input == 'e') {
+            break;
         }
-        x = lul - '0';
-        cout << "Podaj y:";
-        cin >> y;
-        result=x*y;
-        cout << "Wynik mnozenia:" << result << endl;
-    } while (true);
+    }
+
+    return 0;
 }
