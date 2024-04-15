@@ -1,6 +1,3 @@
-//
-// Created by piotr on 13.04.2024.
-//
 #include "GameModel.h"
 #ifndef UNTITLED1_GAMEVIEW_H
 #define UNTITLED1_GAMEVIEW_H
